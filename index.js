@@ -21,5 +21,7 @@ app.get("/", (req, res) => {
           res.send(course);
         });
         
- 
+        app.listen(port, () => {
+              console.log(`Example ${port}`, port);
+            })
     
