@@ -9,19 +9,11 @@ app.use(cors());
 const courses = require("./Data/courses.json");
 
 app.get("/", (req, res) => {
-  res.send("Example");
-});
-
-app.get("/courses", (req, res) => {
-  res.send(courses);
-});
-
-app.get("/courses/:id", (req, res) => {
-  const id = req.params.id;
-  const course = courses.find((c) => c.id === id);
-  res.send(course);
-});
-
-app.listen(port, () => {
-  console.log(`Example ${port}`, port);
-})
+      res.send("Example");
+    });
+    
+    app.get("/courses", (req, res) => {
+      res.send(courses);
+    });
+    
+    
